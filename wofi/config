@@ -1,0 +1,7 @@
+show=drun
+prompt=Search...
+width=500
+height=350
+location=center
+allow_images=true
+insensitive=true
