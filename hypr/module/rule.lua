@@ -1,21 +1,26 @@
 -- https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
-hl.layer_rule({ 
-    match = { namespace = "waybar" }, 
-    blur = true 
+hl.layer_rule({
+    match = { namespace = "waybar" },
+    blur  = true,
+})
+
+hl.layer_rule({
+    match = { namespace = "wofi" },
+    blur  = true,
 })
 
 -- Global maximize constraints
 hl.window_rule({
-    name  = "suppress-maximize-events",
-    match = { class = ".*" },
+    name           = "suppress-maximize-events",
+    match          = { class = ".*" },
     suppress_event = "maximize",
 })
 
 -- Fix drag behaviors over XWayland windows
 hl.window_rule({
-    name  = "fix-xwayland-drags",
-    match = {
+    name     = "fix-xwayland-drags",
+    match    = {
         class      = "^$",
         title      = "^$",
         xwayland   = true,
