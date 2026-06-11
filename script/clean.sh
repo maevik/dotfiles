@@ -19,6 +19,13 @@ else
     fi
 fi
 
+if command -v go &> /dev/null && [ -n "$SUDO_USER" ]; then
+    echo "[+] cleaning golang build cache and module cache..."
+    sudo -u "$SUDO_USER" go clean -cache -modcache
+else
+    echo "[-] go binary not found or not running via sudo. skipping golang cleanup."
+fi
+
 echo "[+] vacuuming system logs (keeping last 3 days)..."
 journalctl --vacuum-time=3d
 
@@ -35,3 +42,4 @@ cat /dev/null > "/home/$SUDO_USER/.bash_history"
 history -c
 
 echo "[~] finished system cleanup..."
+

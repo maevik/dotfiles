@@ -2,7 +2,7 @@
 
 my daily driving configuration files with hyprland
 
-### contents
+### prerequisites
 
 - kitty
 - wofi
