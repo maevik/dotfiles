@@ -2,8 +2,8 @@
 
 hl.config({
     general = {
-        gaps_in          = 2.5,
-        gaps_out         = 2.5,
+        gaps_in          = 0, -- 2.5 default
+        gaps_out         = 0, -- 2.5 default
         border_size      = 0,
         col              = {
             active_border = { colors = { "rgba(595959aa)", "rgba(595959aa)" }, angle = 45 },
@@ -25,12 +25,12 @@ hl.config({
             enabled  = true,
             size     = 5,
             passes   = 3,
-            vibrancy = 20.1696,
+            vibrancy = 1.1696,
         },
     },
 
     animations = {
-        enabled = true,
+        enabled = false,
     },
 })
 
