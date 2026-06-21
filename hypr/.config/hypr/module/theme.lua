@@ -32,6 +32,11 @@ hl.config({
     animations = {
         enabled = false,
     },
+
+    input = {
+        repeat_rate = 50,
+        repeat_delay = 300,
+    }
 })
 
 -- bezier curves
