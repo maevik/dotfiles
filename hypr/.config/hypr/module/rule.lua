@@ -3,11 +3,13 @@
 hl.layer_rule({
     match = { namespace = "waybar" },
     blur  = true,
+    ignore_alpha = 0
 })
 
 hl.layer_rule({
     match = { namespace = "wofi" },
     blur  = true,
+    ignore_alpha = 0
 })
 
 -- Global maximize constraints

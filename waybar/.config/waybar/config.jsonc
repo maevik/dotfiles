@@ -1,7 +1,10 @@
 {
-  "position": "bottom",
-  "spacing": 0,
-  "height": 24,
+  "position": "top",
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 4,
+  "height": 28,
   "layer": "top",
 
   "modules-left": [
