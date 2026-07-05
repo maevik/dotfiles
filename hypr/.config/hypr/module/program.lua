@@ -1,7 +1,7 @@
 local program = {}
 
 program.terminal = "kitty"
-program.fileManager = "thunar"
+program.fileManager = "dolphin"
 program.menu = "wofi --show drun"
 
 return program
