@@ -1,42 +1,42 @@
 -- https://wiki.hypr.land/Configuring/Basics/Variables/
 
 hl.config({
-    general = {
-        gaps_in          = 4,
-        gaps_out         = 8,
-        border_size      = 0,
-        col              = {
-            -- active_border = { colors = { "rgba(595959aa)", "rgba(595959aa)" }, angle = 45 },
-	    active_border = "rgba(FFFFFF33)",
-            inactive_border = "rgba(21212100)",
-        },
-        resize_on_border = false,
-        allow_tearing    = false,
-        layout           = "dwindle",
-    },
+	general = {
+		gaps_in = 3, -- 8
+		gaps_out = 3, -- 16
+		border_size = 0,
+		col = {
+			-- active_border = { colors = { "rgba(595959aa)", "rgba(595959aa)" }, angle = 45 },
+			active_border = "rgba(FFFFFF33)",
+			inactive_border = "rgba(21212100)",
+		},
+		resize_on_border = false,
+		allow_tearing = false,
+		layout = "dwindle",
+	},
 
-    decoration = {
-        rounding         = 0, -- 10
-	      rounding_power   = 0, -- 3
-	      active_opacity   = 1.0,
-        inactive_opacity = 1.0,
+	decoration = {
+		rounding = 0, -- 12
+		rounding_power = 0, -- 3
+		active_opacity = 1.0,
+		inactive_opacity = 1.0,
 
-        blur             = {
-            enabled  = true,
-            size     = 5,
-            passes   = 3,
-            vibrancy = 1.1696,
-        },
-    },
+		blur = {
+			enabled = true,
+			size = 5,
+			passes = 3,
+			vibrancy = 1.1696,
+		},
+	},
 
-    animations = {
-        enabled = true,
-    },
+	animations = {
+		enabled = true,
+	},
 
-    input = {
-        repeat_rate = 50,
-        repeat_delay = 300,
-    }
+	input = {
+		repeat_rate = 50,
+		repeat_delay = 300,
+	},
 })
 
 -- bezier curves
@@ -73,17 +73,17 @@ hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" 
 
 -- Layout Specific Configurations
 hl.config({
-    dwindle = {
-        preserve_split = true,
-    },
-    master = {
-        new_status = "master",
-    },
-    scrolling = {
-        fullscreen_on_one_column = true,
-    },
-    misc = {
-        force_default_wallpaper = -1,
-        disable_hyprland_logo   = false,
-    },
+	dwindle = {
+		preserve_split = true,
+	},
+	master = {
+		new_status = "master",
+	},
+	scrolling = {
+		fullscreen_on_one_column = true,
+	},
+	misc = {
+		force_default_wallpaper = -1,
+		disable_hyprland_logo = false,
+	},
 })

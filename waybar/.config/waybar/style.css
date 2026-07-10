@@ -17,8 +17,8 @@ window#waybar > box {
     background: rgba(0, 0, 0, 0.7);
     color: #eceff4;
     /* border-radius: 10px; */
-    padding: 4px 8px;
-    margin: 2px 380px 6px 380px;
+    padding: 4px 4px;
+    margin: 2px 430px 6px 430px;
 }
 
 tooltip {
