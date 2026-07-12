@@ -20,6 +20,9 @@ exec nm-applet --indicator
 # default_floating_border normal
 # smart_borders on
 
+font pango:Iosevka Nerd Font 9
+titlebar_padding 4 1
+
 output HDMI-A-1 mode 1920x1080@100Hz
 
 input "type:keyboard" {
