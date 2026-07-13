@@ -9,12 +9,10 @@ USER_NAME=${SUDO_USER:-$USER}
 USER_HOME=$(eval echo ~$USER_NAME)
 
 echo "-- cleaning pacman and paru cache..."
-# Forcefully remove broken concurrent download files first
 rm -f /var/cache/pacman/pkg/download-* 2>/dev/null
 pacman -Sc --noconfirm 2>/dev/null
 
-# Run paru without asking for a password or confirmation prompts
-sudo -u "$USER_NAME" paru -Sc --noconfirm --noprovide --nodeps 2>/dev/null
+sudo -u "$USER_NAME" yay -Sc --noconfirm --noprovide --nodeps 2>/dev/null
 
 echo "-- removing orphan packages..."
 if pacman -Qtdq > /dev/null; then
