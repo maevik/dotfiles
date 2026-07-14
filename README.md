@@ -1,17 +1,15 @@
 ### Dotfiles
 
-My really snappy linux setup for wayland
+My really snappy linux setup for daily driving
 
 ### Prerequisites
 
-- sway
-- foot
-
+- i3
 - hyprland
+- alacritty
 - kitty
 - wofi
 - waybar
-
 - Iosevka Nerd Font
 
 ### Setup
