@@ -2,9 +2,10 @@ set $mod Mod4
 
 font pango:Iosevka Nerd Font 11
 
-exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 100.00
-exec --no-startup-id xset r rate 200 50
-exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --rate 100
+exec --no-startup-id xset r rate 200 35
+exec --no-startup-id picom
+
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
@@ -19,30 +20,30 @@ tiling_drag modifier titlebar
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+Shift+s exec --no-startup-id scrot -s -f -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
 
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+Shift+s exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+
+bindsym $mod+l focus right
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-bindsym $mod+h split h
 bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
@@ -88,7 +89,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # bindsym $mod+Shift+c reload
-# bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 mode "resize" {
