@@ -17,5 +17,5 @@ My really snappy linux setup for daily driving
 ```bash
 sudo pacman -S chezmoi
 
-chezmoi init --apply [https://github.com/maevik/dotfiles.git](https://github.com/maevik/dotfiles.git)
+chezmoi init --apply https://github.com/maevik/dotfiles.git
 ```
