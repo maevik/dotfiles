@@ -1,6 +1,6 @@
 -- https://wiki.hypr.land/Configuring/Basics/Binds/
 
-local program = require("module.program")
+local program = require("program")
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(program.terminal))

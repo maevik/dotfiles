@@ -1,0 +1,6 @@
+require 'maevik.theme.kanagawa'
+require 'maevik.config.options'
+require 'maevik.config.keymaps'
+require 'maevik.config.pack'
+require 'maevik.config.plugins'
+require 'maevik.config.languages'

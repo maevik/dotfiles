@@ -1,16 +1,27 @@
-### Dotfiles
+# dotfiles
 
-My really snappy linux setup for daily driving
+My linux configurations setup for daily driving
 
 ### Prerequisites
 
+- git
+- chezmoi
+- neovim
+- fd-find
+- ripgrep
+- tree-sitter-cli
+- Iosevka Nerd Font
+
+
 - i3
-- hyprland
 - alacritty
+
+or
+
+- hyprland
 - kitty
 - wofi
 - waybar
-- Iosevka Nerd Font
 
 ### Setup
 
