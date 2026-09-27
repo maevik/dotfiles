@@ -4,24 +4,9 @@ My linux configurations setup for daily driving
 
 ### Prerequisites
 
-- git
-- chezmoi
-- neovim
-- fd-find
-- ripgrep
-- tree-sitter-cli
-- Iosevka Nerd Font
+- git, i3, alacritty chezmoi, hyprland, kitty, wofi, waybar
 
-
-- i3
-- alacritty
-
-or
-
-- hyprland
-- kitty
-- wofi
-- waybar
+- neovim, fd-find, ripgrep, tree-sitter-cli, Iosevka Nerd Font
 
 ### Setup
 
